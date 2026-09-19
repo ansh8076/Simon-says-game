@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Squid Game</title>
+    <link rel="stylesheet" href="simon-says.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>Simon says game</h1>
+        <div class="inst-div">
+            <div class="inst-box instruction">
+                <section>
+                    <h2>How to play</h2>
+
+                    <div class="step">
+                        <div class="step-num">01</div>
+                        <div class="step-body">
+                            <h3>Watch the sequence</h3>
+                            <p>The board lights up one pad at a time, in one of four colours. Pay close attention,
+                                it
+                                only plays once.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">02</div>
+                        <div class="step-body">
+                            <h3>Repeat it back</h3>
+                            <p>Tap or click the pads in the exact order they lit up. There is no time limit, but the
+                                order has to match.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">03</div>
+                        <div class="step-body">
+                            <h3>The sequence grows</h3>
+                            <p>Get it right, and one more step gets added to the pattern. Round two is two pads,
+                                round
+                                three is three, and so on.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">04</div>
+                        <div class="step-body">
+                            <h3>One wrong tap ends the run</h3>
+                            <p>A single mistake stops the game. Whatever round you reached becomes your score for
+                                that
+                                attempt.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">05</div>
+                        <div class="step-body">
+                            <h3>Chase your best score</h3>
+                            <p>Every attempt is a fresh shot at a longer sequence. Try to beat your personal best
+                                each
+                                time you play.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="inst-box benefits">
+                <section>
+                    <h2>Why it is worth playing</h2>
+                    <div class="benefit-grid">
+                        <div class="benefit">
+                            <h3>Sharpens working memory</h3>
+                            <p>Holding a growing sequence in your head and recalling it in order is a direct workout
+                                for
+                                short term memory.</p>
+                        </div>
+                        <div class="benefit">
+                            <h3>Trains focus and reaction time</h3>
+                            <p>You have to watch closely and respond accurately, which builds concentration and
+                                quick,
+                                clean decision making.</p>
+                        </div>
+                        <div class="benefit">
+                            <h3>A quiet, low pressure break</h3>
+                            <p>No timer, no opponent, just you against your own last round. A good way to reset
+                                between
+                                study or work sessions.</p>
+                        </div>
+                        <div class="benefit">
+                            <h3>Genuinely replayable</h3>
+                            <p>Since the pattern is different every time, no two rounds feel the same, which keeps
+                                it
+                                interesting after the tenth try.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="inst-box message">
+                <section>
+                    <div class="closing">
+                        <p>This game was built from scratch as a frontend project, piece by piece, from the colour
+                            logic
+                            to the sequence timing. If you catch a bug or think of a feature that would make it
+                            better,
+                            that feedback is genuinely welcome.</p>
+                        <p>Now go ahead and see how long a sequence you can hold in your head.</p>
+                        <p class="signature">Good luck, and have fun playing.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="start-btn-div">
+                <button class="startBtn">START</button>
+            </div>
+        </div>
+    </div>
+
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game</h2>
+    <div id="scores">
+        <h3>High Score: <span>0</span></h3>
+        <h3>Score:<span id="sc">0</span></h3>
+    </div>
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" type="button" id="red">
+            </div>
+            <div class="btn yellow" type="button" id="yellow">
+            </div>
+        </div>
+        <div class="line-two">
+            <div class="btn blue" type="button" id="blue"></div>
+            <div class="btn green" type="button" id="green"></div>
+        </div>
+    </div>
+    <script src="simon-says.js"></script>
+</body>
+
+</html>
